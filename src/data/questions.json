@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer Science & AI",
+    "topic": "Machine Learning & Neural Nets",
+    "text": "An AI inference cluster processes 4,800 tokens per second across 6 parallel GPU instances. If an optimization doubles the processing throughput per instance, how many tokens will 4 instances process in 10 seconds?",
+    "options": [
+      "32,000 tokens",
+      "64,000 tokens",
+      "48,000 tokens",
+      "16,000 tokens"
+    ],
+    "correct_answer": "64,000 tokens",
+    "explanation": "Initial throughput per GPU = 4,800 / 6 = 800 tokens/sec. With doubling, new throughput = 1,600 tokens/sec. For 4 instances over 10 seconds: 4 × 1,600 × 10 = 64,000 tokens.",
+    "fallback_question": {
+      "text": "If 1 GPU processes 800 tokens every second, how many tokens does it process in 5 seconds?",
+      "options": [
+        "2,000 tokens",
+        "4,000 tokens",
+        "8,000 tokens",
+        "1,600 tokens"
+      ],
+      "correct_answer": "4,000 tokens",
+      "explanation": "Multiply the rate by time: 800 tokens/second × 5 seconds = 4,000 tokens."
+    }
+  },
+  {
+    "id": 2,
+    "subject": "SAT Math",
+    "topic": "Linear Equations & Rates",
+    "text": "SpaceX's Starship burns fuel at a constant rate during ascent. If the rocket has 1,200 metric tons of fuel at launch and 450 metric tons remaining after 150 seconds, what linear equation models fuel remaining F(t) in metric tons at time t seconds?",
+    "options": [
+      "F(t) = 1200 - 5t",
+      "F(t) = 1200 - 7.5t",
+      "F(t) = 450 - 5t",
+      "F(t) = 1200 - 3t"
+    ],
+    "correct_answer": "F(t) = 1200 - 5t",
+    "explanation": "Burn rate = (1200 - 450) / 150 = 750 / 150 = 5 tons/sec. Since fuel starts at 1,200 and decreases by 5t, the equation is F(t) = 1200 - 5t.",
+    "fallback_question": {
+      "text": "A vehicle starts with 50 gallons of propellant and consumes 2 gallons every minute. How much propellant remains after 10 minutes?",
+      "options": [
+        "20 gallons",
+        "30 gallons",
+        "40 gallons",
+        "10 gallons"
+      ],
+      "correct_answer": "30 gallons",
+      "explanation": "Total fuel burned = 2 gallons/min × 10 min = 20 gallons. Remaining = 50 - 20 = 30 gallons."
+    }
+  },
+  {
+    "id": 3,
+    "subject": "Cryptocurrency & DeFi",
+    "topic": "Blockchain Mining & Halving",
+    "text": "A proof-of-work blockchain cuts block rewards by 50% every 210,000 blocks. If the initial reward was 50 BTC per block, what is the reward per block after the 3rd halving event?",
+    "options": [
+      "12.5 BTC",
+      "3.125 BTC",
+      "6.25 BTC",
+      "1.5625 BTC"
+    ],
+    "correct_answer": "6.25 BTC",
+    "explanation": "Initial: 50 BTC. 1st halving: 25 BTC. 2nd halving: 12.5 BTC. 3rd halving: 6.25 BTC.",
+    "fallback_question": {
+      "text": "A reward of 20 tokens is cut in half twice. What is the final reward amount?",
+      "options": [
+        "10 tokens",
+        "5 tokens",
+        "2.5 tokens",
+        "7.5 tokens"
+      ],
+      "correct_answer": "5 tokens",
+      "explanation": "First reduction: 20 / 2 = 10. Second reduction: 10 / 2 = 5."
+    }
+  },
+  {
+    "id": 4,
+    "subject": "Computer Science & AI",
+    "topic": "Machine Learning & Neural Nets",
+    "text": "In a Transformer neural network, a self-attention matrix multiplies a Query matrix Q of shape (512, 64) with a transposed Key matrix K^T of shape (64, 512). What is the dimension of the resulting attention score matrix?",
+    "options": [
+      "(64, 64)",
+      "(512, 512)",
+      "(512, 64)",
+      "(64, 512)"
+    ],
+    "correct_answer": "(512, 512)",
+    "explanation": "Multiplying matrix (M, K) with (K, N) produces a matrix of shape (M, N). Thus (512, 64) × (64, 512) results in shape (512, 512).",
+    "fallback_question": {
+      "text": "If Matrix A has dimensions (3, 2) and Matrix B has dimensions (2, 5), what are the dimensions of product AB?",
+      "options": [
+        "(3, 5)",
+        "(2, 2)",
+        "(5, 3)",
+        "(3, 2)"
+      ],
+      "correct_answer": "(3, 5)",
+      "explanation": "The inner dimension 2 matches, leaving outer dimensions rows of A (3) and columns of B (5), giving (3, 5)."
+    }
+  },
+  {
+    "id": 5,
+    "subject": "SAT Math",
+    "topic": "Space Telemetry & Speed",
+    "text": "A radio control signal sent from Houston to a Mars rover travels 225,000,000 kilometers at the speed of light (300,000 km/s). How many minutes does it take for the signal to reach the rover?",
+    "options": [
+      "10.5 minutes",
+      "12.5 minutes",
+      "15.0 minutes",
+      "7.5 minutes"
+    ],
+    "correct_answer": "12.5 minutes",
+    "explanation": "Time in seconds = 225,000,000 / 300,000 = 750 seconds. Convert to minutes: 750 / 60 = 12.5 minutes.",
+    "fallback_question": {
+      "text": "A communication ping travels 600 kilometers at a speed of 100 km/s. How many seconds does it take?",
+      "options": [
+        "3 seconds",
+        "6 seconds",
+        "60 seconds",
+        "0.6 seconds"
+      ],
+      "correct_answer": "6 seconds",
+      "explanation": "Time = Distance / Speed = 600 / 100 = 6 seconds."
+    }
+  },
+  {
+    "id": 6,
+    "subject": "Computer Science & AI",
+    "topic": "Data Structures & Complexity",
+    "text": "What is the worst-case time complexity of searching for an element in a Hash Table when every key causes a hash collision into a single bucket implemented as an unindexed linked list?",
+    "options": [
+      "O(1)",
+      "O(log N)",
+      "O(N)",
+      "O(N^2)"
+    ],
+    "correct_answer": "O(N)",
+    "explanation": "When all N keys hash to the identical slot, the bucket degrades into a linear linked list of length N, requiring O(N) comparisons in the worst case.",
+    "fallback_question": {
+      "text": "What is the average lookup time complexity of a properly balanced hash table with good distribution?",
+      "options": [
+        "O(1)",
+        "O(N)",
+        "O(N log N)",
+        "O(N^2)"
+      ],
+      "correct_answer": "O(1)",
+      "explanation": "Under normal uniform hashing, hash table lookups take constant time on average: O(1)."
+    }
+  },
+  {
+    "id": 7,
+    "subject": "Cryptocurrency & DeFi",
+    "topic": "Automated Market Makers & DEX",
+    "text": "An automated market maker (AMM) pool follows the formula x · y = k. Currently, the pool holds 100 ETH (x) and 200,000 USDC (y), with k = 20,000,000. If a trader swaps in 25 ETH (ignoring gas and fees), what is the new quantity of USDC in the pool?",
+    "options": [
+      "150,000 USDC",
+      "160,000 USDC",
+      "175,000 USDC",
+      "180,000 USDC"
+    ],
+    "correct_answer": "160,000 USDC",
+    "explanation": "New x = 100 + 25 = 125. Since x · y = k, new y = 20,000,000 / 125 = 160,000 USDC.",
+    "fallback_question": {
+      "text": "If product x × y = 100 and x increases to 10, what must y equal?",
+      "options": [
+        "5",
+        "10",
+        "20",
+        "1"
+      ],
+      "correct_answer": "10",
+      "explanation": "Divide the constant by the new value of x: 100 / 10 = 10."
+    }
+  },
+  {
+    "id": 8,
+    "subject": "Computer Science & AI",
+    "topic": "Machine Learning & Neural Nets",
+    "text": "In gradient descent optimization, weight W is updated with learning rate α = 0.05. If the current weight W = 1.80 and the calculated loss gradient dL/dW = 4.0, what is the updated weight value?",
+    "options": [
+      "1.60",
+      "2.00",
+      "1.75",
+      "1.95"
+    ],
+    "correct_answer": "1.60",
+    "explanation": "Weight update formula: W_new = W - (α × dL/dW) = 1.80 - (0.05 × 4.0) = 1.80 - 0.20 = 1.60.",
+    "fallback_question": {
+      "text": "Calculate the updated value of a parameter X = 10 when subtracting a step size of 0.2 × 5.",
+      "options": [
+        "9",
+        "8",
+        "11",
+        "9.5"
+      ],
+      "correct_answer": "9",
+      "explanation": "Step size = 0.2 × 5 = 1. Updated value = 10 - 1 = 9."
+    }
+  },
+  {
+    "id": 9,
+    "subject": "SAT Math",
+    "topic": "Linear Equations & Rates",
+    "text": "A Starlink satellite completes 16 full orbits around Earth every 24 hours. If each orbit covers an orbital circumference of approximately 42,000 km, what is the satellite's orbital speed in km/h?",
+    "options": [
+      "26,000 km/h",
+      "28,000 km/h",
+      "32,000 km/h",
+      "24,000 km/h"
+    ],
+    "correct_answer": "28,000 km/h",
+    "explanation": "Total distance traveled in 24 hours = 16 × 42,000 = 672,000 km. Speed = 672,000 km / 24 hours = 28,000 km/h.",
+    "fallback_question": {
+      "text": "A drone flies 300 kilometers in 3 hours. What is its average speed in km/h?",
+      "options": [
+        "100 km/h",
+        "150 km/h",
+        "90 km/h",
+        "120 km/h"
+      ],
+      "correct_answer": "100 km/h",
+      "explanation": "Speed = Distance / Time = 300 / 3 = 100 km/h."
+    }
+  },
+  {
+    "id": 10,
+    "subject": "Computer Science & AI",
+    "topic": "Data Structures & Complexity",
+    "text": "A load balancer distributes requests across 5 microservice replicas using round-robin. If replica #3 experiences a latency spike and its internal message queue grows by 12 requests every minute while processing 8 requests every minute, what is its net queue growth after 15 minutes?",
+    "options": [
+      "40 requests",
+      "60 requests",
+      "80 requests",
+      "45 requests"
+    ],
+    "correct_answer": "60 requests",
+    "explanation": "Net increase per minute = incoming (12) - processed (8) = 4 requests/min. Over 15 minutes: 4 × 15 = 60 requests.",
+    "fallback_question": {
+      "text": "A bucket receives 5 liters of water per minute and drains 3 liters per minute. What is the net water increase after 10 minutes?",
+      "options": [
+        "10 liters",
+        "15 liters",
+        "20 liters",
+        "30 liters"
+      ],
+      "correct_answer": "20 liters",
+      "explanation": "Net intake rate = 5 - 3 = 2 liters/min. In 10 minutes: 2 × 10 = 20 liters."
+    }
+  },
+  {
+    "id": 11,
+    "subject": "Mathematics",
+    "topic": "Calculus & Optimization",
+    "text": "If the function f(x) = 3x^2 - 12x + 7 represents the trajectory cost of an autonomous drone, at what value of x is the cost minimized?",
+    "options": [
+      "x = 2",
+      "x = 4",
+      "x = -2",
+      "x = 3"
+    ],
+    "correct_answer": "x = 2",
+    "explanation": "To find the minimum of a parabolic function f(x) = ax^2 + bx + c, find the vertex at x = -b / (2a). Here, x = -(-12) / (2 × 3) = 12 / 6 = 2 (or derivative f'(x) = 6x - 12 = 0 => x = 2).",
+    "fallback_question": {
+      "text": "What is the derivative f'(x) of the quadratic term f(x) = 3x^2?",
+      "options": [
+        "6x",
+        "3x",
+        "6",
+        "9x^2"
+      ],
+      "correct_answer": "6x",
+      "explanation": "Using the power rule d/dx [a*x^n] = n*a*x^(n-1): 2 × 3 × x^(2-1) = 6x."
+    }
+  },
+  {
+    "id": 12,
+    "subject": "Mathematics",
+    "topic": "Probability & Statistics",
+    "text": "A biometric server has an independent verification accuracy of 90% per scan. What is the probability that both of two consecutive scans are verified successfully?",
+    "options": [
+      "81%",
+      "90%",
+      "99%",
+      "75%"
+    ],
+    "correct_answer": "81%",
+    "explanation": "For two independent events A and B, P(A and B) = P(A) × P(B). Thus, 0.90 × 0.90 = 0.81, which is 81%.",
+    "fallback_question": {
+      "text": "If the chance of flipping heads is 50% (0.5), what is the probability of flipping heads twice in a row?",
+      "options": [
+        "25%",
+        "50%",
+        "10%",
+        "75%"
+      ],
+      "correct_answer": "25%",
+      "explanation": "Multiply independent probabilities: 0.5 × 0.5 = 0.25 (25%)."
+    }
+  },
+  {
+    "id": 13,
+    "subject": "IELTS Academic",
+    "topic": "Lexical Resource & Vocabulary",
+    "text": "Choose the word that best completes the academic statement: 'Recent macroeconomic data appears to ________ the hypothesis that investment in renewable grid infrastructure drives long-term urban productivity.'",
+    "options": [
+      "corroborate",
+      "contradictory",
+      "obviating",
+      "deteriorate"
+    ],
+    "correct_answer": "corroborate",
+    "explanation": "'Corroborate' is an academic transitive verb meaning to confirm or give support to a statement, theory, or finding. It grammatically fits the infinitive 'to [verb] the hypothesis'.",
+    "fallback_question": {
+      "text": "Which academic word is a direct synonym for 'support' or 'confirm' with evidence?",
+      "options": [
+        "Verify",
+        "Deny",
+        "Neglect",
+        "Disprove"
+      ],
+      "correct_answer": "Verify",
+      "explanation": "'Verify' means to make sure or demonstrate that something is true or accurate, matching 'confirm'."
+    }
+  },
+  {
+    "id": 14,
+    "subject": "IELTS Academic",
+    "topic": "Reading & Paraphrasing",
+    "text": "IELTS Reading Paraphrase: Original: 'Despite stringent carbon emission caps, global atmospheric CO2 levels continued an upward trajectory.' Which statement accurately paraphrases the original without distorting meaning?",
+    "options": [
+      "Atmospheric carbon concentrations climbed steadily even though strict emission thresholds were enforced.",
+      "Because emission caps were enforced, global CO2 levels dropped significantly.",
+      "Global carbon levels rose because regulatory authorities refused to introduce caps.",
+      "Emissions continued upwards exclusively where caps were absent."
+    ],
+    "correct_answer": "Atmospheric carbon concentrations climbed steadily even though strict emission thresholds were enforced.",
+    "explanation": "'Even though strict emission thresholds were enforced' accurately reflects 'Despite stringent carbon emission caps', and 'climbed steadily' accurately mirrors 'continued an upward trajectory'.",
+    "fallback_question": {
+      "text": "Which conjunction best replaces 'Despite' in a concession clause?",
+      "options": [
+        "Although",
+        "Because",
+        "Therefore",
+        "Since"
+      ],
+      "correct_answer": "Although",
+      "explanation": "'Although' introduces a contrast or concession, functioning similarly to 'despite' (though 'despite' takes a noun phrase and 'although' takes a clause)."
+    }
+  },
+  {
+    "id": 15,
+    "subject": "Physics",
+    "topic": "Classical Mechanics & Dynamics",
+    "text": "A 1,500 kg electric vehicle accelerates uniformly from rest to 30 m/s (approx 108 km/h) in 5 seconds. What is the net average propulsion force exerted on the vehicle?",
+    "options": [
+      "9,000 N",
+      "4,500 N",
+      "15,000 N",
+      "6,000 N"
+    ],
+    "correct_answer": "9,000 N",
+    "explanation": "Acceleration a = Δv / Δt = (30 - 0) / 5 = 6 m/s². By Newton's Second Law F = m × a: F = 1500 kg × 6 m/s² = 9,000 Newtons.",
+    "fallback_question": {
+      "text": "According to Newton's Second Law, what formula relates Force (F), Mass (m), and Acceleration (a)?",
+      "options": [
+        "F = m × a",
+        "F = m / a",
+        "F = m + a",
+        "F = 0.5 × m × a^2"
+      ],
+      "correct_answer": "F = m × a",
+      "explanation": "Force equals mass multiplied by acceleration: F = ma."
+    }
+  },
+  {
+    "id": 16,
+    "subject": "Physics",
+    "topic": "Modern & Quantum Physics",
+    "text": "An electron transitions between two energy levels in a hydrogen atom, emitting a photon with wavelength λ = 500 nm (5 × 10^-7 m). Given Planck's constant h ≈ 6.63 × 10^-34 J·s and light speed c = 3.0 × 10^8 m/s, what is the approximate energy of the photon?",
+    "options": [
+      "3.98 × 10^-19 J",
+      "1.99 × 10^-18 J",
+      "9.95 × 10^-20 J",
+      "4.50 × 10^-19 J"
+    ],
+    "correct_answer": "3.98 × 10^-19 J",
+    "explanation": "Photon energy E = (h × c) / λ. E = (6.63 × 10^-34 × 3.0 × 10^8) / (5.0 × 10^-7) = (1.989 × 10^-25) / (5.0 × 10^-7) = 3.978 × 10^-19 Joules.",
+    "fallback_question": {
+      "text": "What is the relationship between photon energy E, frequency f, and Planck's constant h?",
+      "options": [
+        "E = h × f",
+        "E = h / f",
+        "E = f / h",
+        "E = h + f"
+      ],
+      "correct_answer": "E = h × f",
+      "explanation": "Planck-Einstein relation states that Energy of a photon is directly proportional to its frequency: E = hf."
+    }
+  },
+  {
+    "id": 17,
+    "subject": "SAT Math",
+    "topic": "Quadratic & Non-Linear Functions",
+    "text": "A projectile launched upward has its altitude in meters given by h(t) = -5t^2 + 40t + 10. What is the maximum height attained by the projectile?",
+    "options": [
+      "90 meters",
+      "80 meters",
+      "100 meters",
+      "75 meters"
+    ],
+    "correct_answer": "90 meters",
+    "explanation": "The maximum occurs at vertex time t = -b / (2a) = -40 / (2 × -5) = 4 seconds. Substituting t = 4: h(4) = -5(16) + 40(4) + 10 = -80 + 160 + 10 = 90 meters.",
+    "fallback_question": {
+      "text": "At what time t does a quadratic curve h(t) = -5t^2 + 30t reach its vertex peak?",
+      "options": [
+        "3 seconds",
+        "6 seconds",
+        "5 seconds",
+        "1.5 seconds"
+      ],
+      "correct_answer": "3 seconds",
+      "explanation": "Vertex time t = -b / (2a) = -30 / (2 × -5) = -30 / -10 = 3 seconds."
+    }
+  },
+  {
+    "id": 18,
+    "subject": "Computer Science & AI",
+    "topic": "Algorithms & Graph Theory",
+    "text": "In a weighted graph without negative edge weights, which algorithm guarantees finding the shortest path from a single source node to all other nodes in O((V + E) log V) time using a min-priority queue?",
+    "options": [
+      "Dijkstra's Algorithm",
+      "Bellman-Ford Algorithm",
+      "Floyd-Warshall Algorithm",
+      "Kruskal's Algorithm"
+    ],
+    "correct_answer": "Dijkstra's Algorithm",
+    "explanation": "Dijkstra's algorithm with a binary min-heap / priority queue solves single-source shortest path for non-negative weights in O((V + E) log V). Bellman-Ford is O(V·E) and handles negative weights.",
+    "fallback_question": {
+      "text": "What unweighted graph traversal algorithm explores nodes level by level to find shortest paths?",
+      "options": [
+        "Breadth-First Search (BFS)",
+        "Depth-First Search (DFS)",
+        "Binary Search",
+        "QuickSort"
+      ],
+      "correct_answer": "Breadth-First Search (BFS)",
+      "explanation": "Breadth-First Search (BFS) visits nodes layer by layer, naturally identifying shortest paths in unweighted graphs."
+    }
+  },
+  {
+    "id": 19,
+    "subject": "Cryptocurrency & DeFi",
+    "topic": "Cryptography & Hashing",
+    "text": "Which mathematical primitive ensures that a digital signature created with a private key can be universally verified using the corresponding public key, while making it computationally impossible to derive the private key?",
+    "options": [
+      "Elliptic Curve Asymmetric Cryptography (ECDSA)",
+      "Symmetric AES-256 Block Cipher",
+      "Linear Cyclic Redundancy Check (CRC32)",
+      "MD5 Checksum Hash Function"
+    ],
+    "correct_answer": "Elliptic Curve Asymmetric Cryptography (ECDSA)",
+    "explanation": "ECDSA leverages the discrete logarithm problem over elliptic curve groups (like secp256k1 in Bitcoin and Ethereum), providing trapdoor one-way security for signatures.",
+    "fallback_question": {
+      "text": "In public-key cryptography, which key is kept secret by the owner to sign messages?",
+      "options": [
+        "Private Key",
+        "Public Key",
+        "Symmetric Key",
+        "Master Hash"
+      ],
+      "correct_answer": "Private Key",
+      "explanation": "The private key must always be kept secret to authorize transactions, while the public key is shared to verify."
+    }
+  },
+  {
+    "id": 20,
+    "subject": "Mathematics",
+    "topic": "Linear Algebra & Vectors",
+    "text": "Given vector u = [3, -2] and vector v = [4, 6] in 2D space, what is their Euclidean dot product u · v?",
+    "options": [
+      "0",
+      "24",
+      "12",
+      "-12"
+    ],
+    "correct_answer": "0",
+    "explanation": "The dot product u · v = (3 × 4) + (-2 × 6) = 12 - 12 = 0. Since the dot product is 0, the two vectors are orthogonal (perpendicular).",
+    "fallback_question": {
+      "text": "When the dot product of two non-zero vectors equals zero, what angle do they form?",
+      "options": [
+        "90 degrees (Orthogonal)",
+        "0 degrees (Parallel)",
+        "180 degrees (Opposite)",
+        "45 degrees"
+      ],
+      "correct_answer": "90 degrees (Orthogonal)",
+      "explanation": "Because u · v = |u||v|cos(θ), a dot product of zero indicates cos(θ) = 0, meaning θ = 90°."
+    }
+  },
+  {
+    "id": 21,
+    "subject": "IELTS Academic",
+    "topic": "Grammar & Cohesion",
+    "text": "Identify the grammatically correct inverted conditional structure appropriate for formal academic writing: 'If the committee had examined the secondary literature earlier, the flawed methodology would have been averted.'",
+    "options": [
+      "Had the committee examined the secondary literature earlier, the flawed methodology would have been averted.",
+      "Did the committee examine the secondary literature earlier, the flawed methodology was averted.",
+      "Should the committee had examined the literature, flawed methodology was prevented.",
+      "Were the committee to had examined the literature, it would avert."
+    ],
+    "correct_answer": "Had the committee examined the secondary literature earlier, the flawed methodology would have been averted.",
+    "explanation": "In formal academic English, third conditional inversion replaces 'If + subject + had + V3' with 'Had + subject + V3', maintaining past unreal conditional semantics with elevated register.",
+    "fallback_question": {
+      "text": "How can 'If you should require further assistance' be formally inverted?",
+      "options": [
+        "Should you require further assistance",
+        "Had you require further assistance",
+        "Were you require further assistance",
+        "Did you require further assistance"
+      ],
+      "correct_answer": "Should you require further assistance",
+      "explanation": "Omitting 'if' with modal 'should' creates the inverted formal clause: 'Should you require...'"
+    }
+  },
+  {
+    "id": 22,
+    "subject": "Physics",
+    "topic": "Thermodynamics & Energy",
+    "text": "An idealized Carnot heat engine operates between a high-temperature reservoir at Th = 500 K and a low-temperature sink at Tc = 300 K. What is the theoretical maximum thermal efficiency η of this heat engine?",
+    "options": [
+      "40%",
+      "60%",
+      "25%",
+      "50%"
+    ],
+    "correct_answer": "40%",
+    "explanation": "Carnot efficiency formula: η = 1 - (Tc / Th) = 1 - (300 / 500) = 1 - 0.60 = 0.40, or 40%.",
+    "fallback_question": {
+      "text": "If an engine absorbs 100 Joules of heat and does 30 Joules of useful work, what is its efficiency?",
+      "options": [
+        "30%",
+        "70%",
+        "100%",
+        "3%"
+      ],
+      "correct_answer": "30%",
+      "explanation": "Efficiency = (Useful Work Output / Total Heat Input) × 100% = (30 / 100) × 100% = 30%."
+    }
+  }
+]
