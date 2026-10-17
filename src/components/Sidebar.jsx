@@ -7,7 +7,8 @@ import {
   Trophy, 
   Sparkles, 
   ShieldCheck, 
-  Award 
+  Award,
+  Bot
 } from 'lucide-react';
 
 export default function Sidebar({ currentLang, onCloseMobile }) {
@@ -17,6 +18,7 @@ export default function Sidebar({ currentLang, onCloseMobile }) {
       sprint: '60s Sprint',
       subjects: 'Subjects',
       leaderboard: 'Leaderboard',
+      aiMentor: 'AI Mentor',
       missionTitle: 'Mistake-to-Mission',
       missionSubtitle: 'Active Learning Engine',
       footerBadge: 'Season 1 Quest Active'
@@ -26,6 +28,7 @@ export default function Sidebar({ currentLang, onCloseMobile }) {
       sprint: '60s Sprint',
       subjects: 'Fanlar',
       leaderboard: 'Yetakchilar',
+      aiMentor: 'AI Mentor',
       missionTitle: 'Xatodan-Missiyaga',
       missionSubtitle: 'Adaptiv Ta’lim Tizimi',
       footerBadge: '1-Mavsum Faol'
@@ -46,6 +49,12 @@ export default function Sidebar({ currentLang, onCloseMobile }) {
       label: t.sprint,
       icon: Zap,
       badge: 'LIVE'
+    },
+    {
+      to: '/mentor',
+      label: t.aiMentor,
+      icon: Bot,
+      badge: 'AI'
     },
     {
       to: '/subjects',

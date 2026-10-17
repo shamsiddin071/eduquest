@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
+import AiChatWidget from '../components/AiChatWidget';
 
 export default function MainLayout() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -81,6 +82,9 @@ export default function MainLayout() {
           <Outlet context={{ currentLang, isDarkMode }} />
         </main>
       </div>
+
+      {/* Global Floating AI Tutor Assistant */}
+      <AiChatWidget currentLang={currentLang} />
     </div>
   );
 }

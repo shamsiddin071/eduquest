@@ -5,6 +5,7 @@ import Auth from './pages/Auth';
 import Dashboard from './pages/Dashboard';
 import SprintGame from './pages/SprintGame';
 import Leaderboard from './pages/Leaderboard';
+import AiMentor from './pages/AiMentor';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/sprint" element={<SprintGame />} />
+        <Route path="/mentor" element={<AiMentor />} />
         <Route path="/subjects" element={<Dashboard />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
       </Route>
